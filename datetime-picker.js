@@ -426,7 +426,7 @@
             restrict: 'EA',
             replace: true,
             transclude: true,
-            templateUrl: '/template/date-picker.html'
+            templateUrl: 'template/date-picker.html'
         };
     })
 
@@ -435,6 +435,6 @@
             restrict: 'EA',
             replace: true,
             transclude: true,
-            templateUrl: '/template/time-picker.html'
+            templateUrl: 'template/time-picker.html'
         };
     });
