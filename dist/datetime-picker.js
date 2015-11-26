@@ -429,7 +429,7 @@ angular.module('ui.bootstrap.datetimepicker', ['ui.bootstrap.dateparser', 'ui.bo
             restrict: 'EA',
             replace: true,
             transclude: true,
-            templateUrl: '/template/date-picker.html'
+            templateUrl: 'template/date-picker.html'
         };
     })
 
@@ -438,7 +438,7 @@ angular.module('ui.bootstrap.datetimepicker', ['ui.bootstrap.dateparser', 'ui.bo
             restrict: 'EA',
             replace: true,
             transclude: true,
-            templateUrl: '/template/time-picker.html'
+            templateUrl: 'template/time-picker.html'
         };
     });
 
