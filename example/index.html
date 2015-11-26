@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
-    <script src="ui-bootstrap.tpls.js"></script>
-    <script src="datetime-picker.js"></script>
-    <script src="script.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/datetime-picker.js"></script>
+    <script src="/example/index.js"></script>
 </head>
 <body style="padding:10px;" class="container-fluid">
 <h1>DateTime Picker Demo</h1>
@@ -26,7 +26,7 @@
             <label class="col-sm-2 control-label">Date</label>
             <div class="col-sm-10">
                 <p class="input-group">
-                    <input type="text" class="form-control" datetime-picker="mediumDate" ng-model="ctrl.dates.date1" is-open="ctrl.open.date1" enable-time="false" datepicker-options="ctrl.dateOptions" date-disabled="ctrl.disabled(date, mode)" close-on-date-selection="false" datepicker-append-to-body="true" clear-text="Remove" />
+                    <input type="text" class="form-control" datetime-picker="mediumDate" ng-model="ctrl.dates.date1" is-open="ctrl.open.date1" enable-time="false" datepicker-options="ctrl.dateOptions" date-disabled="ctrl.disabled(date, mode)" close-on-date-selection="false" datepicker-append-to-body="true" clear-text="Remove" enable-clear="false"/>
                 <span class="input-group-btn">
                     <button type="button" class="btn btn-default" ng-click="ctrl.openCalendar($event, 'date1')"><i class="fa fa-calendar"></i></button>
                 </span>

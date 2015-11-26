@@ -46,6 +46,9 @@
                     scope.enableDate = angular.isDefined(scope.enableDate) ? scope.enableDate : uiDatetimePickerConfig.enableDate;
                     scope.enableTime = angular.isDefined(scope.enableTime) ? scope.enableTime : uiDatetimePickerConfig.enableTime;
 
+                    // determine whether to show the clear button
+                    scope.enableClear = attrs.enableClear === 'false' ? false : true;
+
                     // default picker view
                     scope.showPicker = scope.enableDate ? 'date' : 'time';
 
@@ -423,7 +426,7 @@
             restrict: 'EA',
             replace: true,
             transclude: true,
-            templateUrl: 'template/date-picker.html'
+            templateUrl: '/template/date-picker.html'
         };
     })
 
@@ -432,6 +435,6 @@
             restrict: 'EA',
             replace: true,
             transclude: true,
-            templateUrl: 'template/time-picker.html'
+            templateUrl: '/template/time-picker.html'
         };
     });
